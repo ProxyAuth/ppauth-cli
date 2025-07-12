@@ -62,7 +62,7 @@ def get_token(host: str, port: int, username: str, password: str, verify_tls: bo
             print("Error: 'token' not found in response")
             sys.exit(1)
 
-        print(f"Token: {token}")
+        print(f"{token}")
     except Exception as e:
         print(f"Request failed: {e}")
         sys.exit(1)
